@@ -105,7 +105,7 @@ A basic Java program contains:
 ```java
 dataType variableName = value;
 
-
+# Day 4 – Java
 
 ## 🧩 Programming Language Type System
 
@@ -203,6 +203,69 @@ Each primitive type has a corresponding **Wrapper Class** (used in collections, 
 
 ---
 
+# Day 5 – Java
+
+# 🧩 Type Casting in Java
+
+**Type casting** means converting a value from one data type to another.
+
+---
+
+## 🔹 Types of Casting
+
+### 1. Widening (Implicit)
+- Converts **smaller → larger** data type  
+- Happens **automatically**  
+- **No data loss**
+
+```java
+byte a = 10;
+int b = a; // widening
+2. Narrowing (Explicit)
+Converts larger → smaller data type
+
+Must use (type)
+
+⚠️ Possible data loss
+
+java
+Copy code
+double price = 99.9;
+int newPrice = (int) price; // 99 (.9 lost)
+🔹 Wrapper Classes
+Used to convert between String and primitive types.
+
+java
+Copy code
+String gradeText = "99";
+byte grade = Byte.parseByte(gradeText); // String → byte
+
+String result = String.valueOf(grade);  // byte → String
+Simple vs Complex
+Simple value: use parseType()
+
+Complex value: use Wrapper Class (Byte, Integer, Double, etc.)
+
+🔹 String Conversion Trick
+java
+Copy code
+String result = 1 + 1 + "";
+System.out.println(result); // Output: "2"
+java
+Copy code
+String result = "" + 1 + 1;
+System.out.println(result); // Output: "11"
+🧠 Reason:
+Java reads left to right.
+
+When it starts with numbers → adds numerically first
+
+When it starts with a string → concatenates as text
+
+📝 Summary
+Type	Direction	Example	Data Loss
+Widening	small → large	byte → int	❌
+Narrowing	large → small	double → int	✅
 ### 🏷️ Author
 **RJcodes**
 
