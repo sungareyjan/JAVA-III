@@ -266,6 +266,94 @@ When it starts with a string → concatenates as text
 Type	Direction	Example	Data Loss
 Widening	small → large	byte → int	❌
 Narrowing	large → small	double → int	✅
+
+
+# Day 6 – Java
+
+🧮 Java Operators & Precedence
+📘 PEMDAS Rule
+P – Parentheses
+E – Exponents
+M – Multiplication
+D – Division
+A – Addition
+S – Subtraction
+Same level MD AS
+
+👉 Evaluate top to bottom, left to right.
+
+⚙️ Types of Operators
+🔹 Arithmetic
+
++ - * / %
+
+🔹 Assignment
+
+=
+
+🔹 Augmented Assignment
+
++= -= *= /= %=
+
+🔹 Relational
+
+== != > < >= <=
+
+🔹 Logical
+
+&& || !
+
+🔹 Unary
+
+++ --
+
+🔹 Bitwise (rarely used)
+
+& | ^ ~ << >> >>>
+
+🧠 Var Keyword
+
+var (Java 10+) — automatically detects the variable type.
+
+var num = 10;      // int
+var text = "Hello"; // String
+
+⚖️ Operator Precedence (Highest → Lowest)
+Level	Operators	Description
+1	() [] .	Parentheses, access
+2	++ --	Postfix
+3	++ -- ! ~	Prefix, logical NOT
+4	(type)	Type cast
+5	* / %	Multiply, divide, mod
+6	+ -	Add, subtract
+7	<< >> >>>	Bit shift
+8	< <= > >= instanceof	Relational
+9	== !=	Equality
+10	&	Bitwise AND
+11	^	Bitwise XOR
+12	`	`
+13	&&	Logical AND
+14	`
+15	?:	Ternary
+16	= += -= ...	Assignment
+🔸 Prefix vs Postfix
+Type	Example	When It Happens
+Prefix	++x --x	Increments/Decrements before use
+Postfix	x++ x--	Increments/Decrements after use
+Example:
+int x = 5;
+int a = ++x; // x=6, a=6
+int b = x++; // b=6, x=7
+
+💻 Example
+int result = 10 + 5 * 2;   // 20 (* before +)
+int result2 = (10 + 5) * 2; // 30 (parentheses first)
+
+boolean check = 5 > 3 && 2 < 4; // true
+
+🤝 Team Reminder
+
+10 days before deadline — if not done, everyone helps to finish it.
 ### 🏷️ Author
 **RJcodes**
 
