@@ -350,6 +350,134 @@ int result = 10 + 5 * 2;   // 20 (* before +)
 int result2 = (10 + 5) * 2; // 30 (parentheses first)
 
 boolean check = 5 > 3 && 2 < 4; // true
+# Day 7 – Java
+
+🧠 Control Statements in Java
+📘 Overview
+
+Control statements allow your program to make decisions, repeat actions, and control execution flow.
+They help you decide what to do based on certain conditions.
+
+⚙️ Decision-Making Statements
+🔹 if-else Statement
+
+Used to execute code blocks based on a condition (true or false).
+
+if (condition) {
+    // code to execute if condition is true
+} else {
+    // code to execute if condition is false
+}
+
+🧩 Example: Student Grade Evaluation
+int grade = 85;
+
+if (grade >= 95) {
+    System.out.println("Excellent");
+} else if (grade >= 90) {
+    System.out.println("Very Good");
+} else if (grade >= 80) {
+    System.out.println("Good");
+} else if (grade >= 75) {
+    System.out.println("Fair");
+} else {
+    System.out.println("Failed");
+}
+
+🧮 Output:
+Good
+
+🔀 switch Statement
+
+Used when you need to compare one value against multiple constant options.
+
+int grade = 3;
+String remark;
+
+switch (grade) {
+    case 5:
+        remark = "Excellent";
+        break;
+    case 4:
+        remark = "Very Good";
+        break;
+    case 3:
+        remark = "Good";
+        break;
+    case 2:
+        remark = "Fair";
+        break;
+    default:
+        remark = "Failed";
+        break;
+}
+
+System.out.println("Remarks: " + remark);
+
+🧮 Output:
+Remarks: Good
+
+⚠️ Disadvantages of switch-case
+
+Limited to specific data types
+
+Works only with certain types (e.g., int, char, String, enum).
+
+Cannot handle complex expressions or conditions.
+
+No range checking
+
+You can’t use conditions like grade >= 90 && grade <= 94.
+
+Only exact matches (e.g., case 90:) are allowed.
+
+Requires break statements
+
+Forgetting break can cause fall-through errors (it executes the next case unintentionally).
+
+Less flexible than if-else
+
+Harder to handle multiple conditions or logical operators (&&, ||, etc.).
+
+🧱 Work Space / Package
+
+In Java, you organize your code inside packages — like folders for your classes.
+
+package com.example.controlstatement;
+
+public class GradeChecker {
+    public static void main(String[] args) {
+        // your code here
+    }
+}
+
+🌟 Wildcard *
+
+The wildcard * is used to import all classes from a package.
+
+import java.util.*;
+
+
+This means you can use all classes inside java.util (like Scanner, ArrayList, etc.)
+
+⚙️ Compilation and Execution
+💡 Steps:
+
+Write code → GradeChecker.java
+
+Compile →
+
+javac GradeChecker.java
+
+
+Run →
+
+java GradeChecker
+
+✅ Example Output
+Enter grade: 92
+Very Good
+
 
 🤝 Team Reminder
 

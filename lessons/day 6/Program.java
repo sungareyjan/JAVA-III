@@ -2,8 +2,6 @@ public class Program{ // Declares a public class named Program
 
 	public static void main(String[] args) { // Declares the main method, the entry point of the program
 
-		ublic static void main(String[] args) {
-
         // ----- Arithmetic Operators -----
         int a = 10, b = 5;
         System.out.println("Arithmetic Operators:");
@@ -72,6 +70,5 @@ public class Program{ // Declares a public class named Program
         System.out.println("\nUsing var keyword: " + text);
     }
 
-	}
 
 }
