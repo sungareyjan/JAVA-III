@@ -1,8 +1,8 @@
-public class Program{ // Declares a public class named Program
+public class Program{
 
-	public static void main(String[] args) { // Declares the main method, the entry point of the program
+	public static void main(String[] args) {
 
-		System.out.println("Hello world"); // Prints the string "Hello world" to the console
+		System.out.println("Hello world");
 	}
 
 }
